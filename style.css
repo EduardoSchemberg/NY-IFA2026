@@ -10,6 +10,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f8fb;
     color: #333;
+    font-size: 20px;
+    align-items: center;
     line-height: 1.8;
     max-width: 1000px;
     margin: auto;
@@ -85,4 +87,21 @@ p:first-of-type {
     p {
         font-size: 1rem;
     }
+    :root {
+    --azul: #005792;
+    --azul-claro: #1565c0;
+    --verde: #00695c;
+    --verde-claro: #26a69a;
+    --azul-escuro: #0d47a1;
+}
+
+* {
+    transition: color .35s ease;
+}
+
+h1:hover { color: var(--verde); }
+h2:hover,
+h3:hover { color: var(--azul-claro); }
+p:hover { color: var(--azul); }
+a:hover { color: var(--verde-claro); }
 }
